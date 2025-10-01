@@ -63,7 +63,7 @@ def evaluate_expression():
 # UI
 st.title("🧮 Calculator")
 
-st.text_input("Expression", st.session_state.expression, key="display")
+st.text_input("Expression", st.session_state.expression, key="display",disabled=True)
 
 if st.session_state.show_scientific != True:
     col1, col2, col3, col4 = st.columns(4)
@@ -309,5 +309,6 @@ if st.button("Convert"):
         )
     else:
         st.error("Conversion failed. Please check the currencies and try again.")
+
 
 
