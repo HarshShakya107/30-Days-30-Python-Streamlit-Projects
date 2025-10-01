@@ -1,4 +1,5 @@
-# Required Librarys for the all 30 projects
+
 streamlit
 math
 requests
+
